@@ -45,13 +45,13 @@ $MINIMAL_APT_GET_INSTALL apt-utils apt-transport-https ca-certificates locales p
 apt-get dist-upgrade -y --no-install-recommends -o Dpkg::Options::="--force-confold"
 
 # fix locale
-echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen
-locale-gen en_US
-update-locale LANG=en_US.UTF-8 LC_CTYPE=en_US.UTF-8
+echo "zh_CN.UTF-8 UTF-8" >> /etc/locale.gen
+locale-gen zh_CN
+update-locale LANG=zh_CN.UTF-8 LC_CTYPE=zh_CN.UTF-8
 
-printf en_US.UTF-8 > /container/environment/LANG
-printf en_US.UTF-8 > /container/environment/LANGUAGE
-printf en_US.UTF-8 > /container/environment/LC_CTYPE
+printf zh_CN.UTF-8 > /container/environment/LANG
+printf zh_CN.UTF-8 > /container/environment/LANGUAGE
+printf zh_CN.UTF-8 > /container/environment/LC_CTYPE
 
 apt-get clean
 rm -rf /tmp/* /var/tmp/*

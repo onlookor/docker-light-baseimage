@@ -1,10 +1,11 @@
-FROM debian:buster-slim
+FROM debian:bullseye-slim
 
 COPY . /container
 RUN /container/build.sh
 
-ENV LANG="en_US.UTF-8" \
-    LANGUAGE="en_US:en" \
-    LC_ALL="en_US.UTF-8"
+ENV LANG="zh_CN.UTF-8" \
+    LANGUAGE="zh_CN:zh" \
+    LC_ALL="zh_CN.UTF-8" \
+    TZ="Asia/Shanghai"
 
 ENTRYPOINT ["/container/tool/run"]

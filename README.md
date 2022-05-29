@@ -1,4 +1,4 @@
-# osixia/light-baseimage
+# It's a clone of osixia/light-baseimage
 
 [![Docker Pulls](https://img.shields.io/docker/pulls/osixia/light-baseimage.svg)][hub]
 [![Docker Stars](https://img.shields.io/docker/stars/osixia/light-baseimage.svg)][hub]
